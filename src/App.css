@@ -1,0 +1,174 @@
+body {
+  margin: 0px;
+  font-family: Arial;
+  background-color: #F0F8FF
+}
+
+.navigationbar {
+  display: flex;
+  position: fixed
+}
+
+
+.vertical-bar {
+  margin: 0px;
+  width: 200px;
+  height: 1670px;
+
+
+  padding: 10px;
+  background-color: #226ddd;
+  color: #e0e5ec;
+  font-family: Arial;
+}
+
+.vertical-bar a {
+  text-decoration: none;
+  color: #e0e5ec;
+  line-height: 2.5
+}
+
+.admin {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  text-align: center
+}
+
+.dashboard,
+.chart,
+.table {
+  margin: 10px;
+  font-size: 15px
+}
+
+
+.opacity {
+  margin: 10px;
+  opacity: 0.7;
+  font-size: 11px
+}
+
+.component-content a,
+.utilities-content a,
+.pages-content a {
+  padding: 2px;
+  display: block;
+  background-color: whitesmoke;
+  border-radius: 3px;
+  color: black;
+}
+
+.horizontalbar {
+  margin-top: -1690px;
+  margin-left: 220px;
+}
+
+.horizontalbar a {
+  text-decoration: none;
+  color: black
+}
+
+.avatar {
+  gap: 16px;
+  border-left: 2px solid black;
+}
+
+.avatarName {
+  font-size: 12px;
+}
+
+.board {
+  margin: 20px
+}
+
+.dashboard-content {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.container {
+  margin-left: 10px;
+  margin-top: 20px;
+  width: 220px;
+  height: 90px;
+  display: flex;
+  /* border: 2px solid black; */
+  /* border-left: 4px solid blue; */
+  border-radius: 5px;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white
+}
+
+.container-list {
+  display: flex;
+  justify-content: space-between
+}
+
+.icon {
+  opacity: 0.7;
+
+}
+
+
+.display {
+  gap: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.card-container,
+.card-cont {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 20px
+}
+
+
+
+.progress {
+  min-width: 470px
+}
+
+.progressCont {
+
+  display: flex;
+  justify-content: space-between
+}
+
+.card {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.colorCont {
+  width: 220px;
+  border-radius: 7px;
+  line-height: 3px;
+  text-align: inherit;
+  padding: 5px;
+}
+
+.colors {
+  width: 470px;
+  gap: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.charts {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.copyright {
+  padding: 20px;
+}
