@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import ReactApexChart from 'react-apexCharts';
+import Chart from 'react-apexCharts';
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
 import CardContent from '@mui/material/CardContent';
