@@ -37,7 +37,7 @@ export function PieChart() {
             </CardHeader>
             <CardContent>
                 <div id="chart">
-                    <ReactApexChart options={states.options} series={states.series} height={400} width={450} type="donut" />
+                    <Chart options={states.options} series={states.series} height={400} width={450} type="donut" />
                 </div>
             </CardContent>
         </Card>
