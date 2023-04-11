@@ -7,8 +7,10 @@ import BuildIcon from '@mui/icons-material/Build';
 import FolderIcon from '@mui/icons-material/Folder';
 import BarChartIcon from '@mui/icons-material/BarChart';
 import TableChartIcon from '@mui/icons-material/TableChart';
+import { useNavigate } from 'react-router-dom';
 
 export function Verticalbar() {
+    const navigate = useNavigate()
     const [toggle, setToggle] = useState(false);
     const [show, setShow] = useState(false);
     const [page, setPage] = useState(false);
@@ -27,10 +29,15 @@ export function Verticalbar() {
 
             <hr />
             <div className="dashboard">
-                <Typography variant="p" component="div" sx={{ flexGrow: 1 }}>
-                    <a href="#">Dashboard</a>
+                <Typography variant="p" component="div" sx={{ flexGrow: 1 }} onClick={() => navigate("/")}>
+                    Dashboard
                 </Typography>
-
+                <Typography variant="p" component="div" sx={{ flexGrow: 1 }} onClick={() => navigate("/student")}>
+                    Student
+                </Typography>
+                <Typography variant="p" component="div" sx={{ flexGrow: 1 }} onClick={() => navigate("/teacher")}>
+                    Teacher
+                </Typography>
             </div>
 
             <hr />

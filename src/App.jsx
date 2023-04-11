@@ -18,55 +18,69 @@ import { SimpleBottomNavigation } from './SimpleBottomNavigation';
 import { Dev } from './Dev';
 import { Colors, ContItem } from './Colors';
 import { Dash, Container } from './Dash';
+import { Routes, Route } from 'react-router-dom';
+import { Student } from './Student';
+import { Teacher } from './Teacher';
 
 export default function App() {
 
 
   return (
     <div className="App">
-      <div classNAme="navigationbar">
-        <Verticalbar />
-        <div className="horizontalbar">
-          <AppBar position="static" color="">
-            <Toolbar>
-              <IconButton
-                size="large"
-                edge="start"
-                color="inherit"
-                aria-label="menu"
-                sx={{ mr: 2 }}
-              >
-                <MenuIcon />
+      <Verticalbar />
+      <HorizontalBar />
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/student" element={<Student />} />
+        <Route path="/teacher" element={<Teacher />} />
+      </Routes>
+      <SimpleBottomNavigation />
+    </div>
+  )
+}
+function HorizontalBar() {
+  return (
+    <div classNAme="navigationbar">
+
+      <div className="horizontalbar">
+        <AppBar position="static" color="">
+          <Toolbar>
+            <IconButton
+              size="large"
+              edge="start"
+              color="inherit"
+              aria-label="menu"
+              sx={{ mr: 2 }}
+            >
+              <MenuIcon />
+            </IconButton>
+            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+              <a href="#">Home</a>
+            </Typography>
+            <Badge badgeContent={3} color="error">
+              <IconButton aria-label="notification" color="primary">
+                <NotificationsIcon />
               </IconButton>
-              <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                <a href="#">Home</a>
-              </Typography>
-              <Badge badgeContent={3} color="error">
-                <IconButton aria-label="notification" color="primary">
-                  <NotificationsIcon />
-                </IconButton>
-              </Badge>
+            </Badge>
 
-              <Badge badgeContent={7} color="error">
-                <IconButton aria-label="email" color="primary">
-                  <EmailIcon />
-                </IconButton>
-              </Badge>
+            <Badge badgeContent={7} color="error">
+              <IconButton aria-label="email" color="primary">
+                <EmailIcon />
+              </IconButton>
+            </Badge>
 
 
 
-              <div className="avatar">
-                <IconButton aria-label="avatar">
-                  <span className="avatarName">Douglas Mc Ghee</span><Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
-                </IconButton>
-              </div>
-            </Toolbar>
-          </AppBar>
-          <Dashboard />
-          <SimpleBottomNavigation />
-        </div>
+            <div className="avatar">
+              <IconButton aria-label="avatar">
+                <span className="avatarName">Douglas Mc Ghee</span><Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+              </IconButton>
+            </div>
+          </Toolbar>
+        </AppBar>
+
+
       </div>
-
     </div>
   )
 }
